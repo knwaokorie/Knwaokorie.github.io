@@ -20,7 +20,12 @@
     
     <!-- Java Script JS Charts -->
     <script type="text/javascript" src="js/jscharts.js"></script>
-   <div id="chartcontainer">This is just a replacement in case Javascript is not available or used for SEO purposes</div>
+   <div id="chartcontainer"><script type="text/javascript">
+	var myData = new Array(['unit', 20], ['unit two', 10], ['unit three', 30], ['other unit', 10], ['last unit', 30]);
+	var myChart = new JSChart('chartcontainer', 'bar');
+	myChart.setDataArray(myData);
+	myChart.draw();
+</script></div>
    <script type="text/javascript">
 	var myData = new Array([10, 20], [15, 10], [20, 30], [25, 10], [30, 5]);
 	var myChart = new JSChart('chartcontainer', 'line');
